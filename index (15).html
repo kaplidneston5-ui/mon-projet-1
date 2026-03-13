@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1, user scalable=no "/>
+ <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+	
+   
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+   <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/737D955C-B170-F940-B933-1C25BD64E4BA/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/1F0C021E-31F4-6446-A8BA-F8A34AF784FA/abn/main.css"/><script src="../js/jquery.min.js"></script>
+   
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"!--><!--/script!-->
+	
+<style> 
+
+
+       @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500,900');
+       @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+ 
+ 
+
+       
+  
+  html, body
+	{
+	   
+		margin:0;
+		padding:0;
+		font-family:'lato';	
+		overflow-x:hidden;
+	
+		
+    }
+	
+		body {  background:yellow;
+		    	
+		     } 
+			 
+			 
+			 
+		
+	 .inner	
+	        {
+			  width:90%;
+			  margin:auto;
+            }	
+			
+			
+	
+
+   .menu
+   
+   {
+	  
+	 
+	   background:#11699B; 
+	   width:100%;
+	   height:80px; 
+	   line-height:80px;
+   }
+
+   .m-left
+            {
+			  float:left;
+			  margin-left:10px;
+			  padding-left:30px;
+			 
+			  
+            }
+			
+   
+   
+   .logo
+        {
+		  margin:0px;
+		  color:/*#fff*/gold;
+		  text-transform:uppercase;
+		  font-family:'roboto';
+		  font-weight:/*100*/bold;
+		  font-size:20px;
+		  letter-spacing:1px;
+		  padding-left:1px;
+		  padding-top:30px;
+		}
+		
+	.m-right
+            {
+			 float:right;
+			 /* display:none;*/
+            
+            }	
+
+	.m-link
+	       {
+		     text-decoration:none;
+			 color:#fff;
+			 font-weight:400;
+			 text-transform:uppercase;
+			 padding:0;
+	         margin:0 20px;
+			 transition:all 0.3s case-in-out;		    
+			 border-bottom:2px solid trasparent; 
+             margin-left:30px;
+             padding-bottom:3px;
+            /* height:700px;/*rajoutée********************************/
+	       }		
+			
+	.m-link:hover
+	       { 
+		     
+			  border-color:#fff; 
+			 border-bottom:solid 2px #fff;		
+			 
+	       }		
+	.m-link i
+	        {
+			 margin-right:5px;
+			 height:35px;
+			 padding:0;
+			 
+		 
+			 
+	        }
+    .m-nav-toggle
+                 {
+				   width:40px;
+				   height:80px;
+				   display:none;
+				   flex-direction:column;
+				   justify-content:center;
+				   align-items:center;
+				   float:right;
+				   cursor:pointer; 
+				  
+				 }	
+				 
+   
+
+
+						  
+  span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after
+	               {
+				      content:"";
+	                  display:block;
+					  width:100%;
+					  height:3px;
+					  background:#fff;
+					  position:relative;
+	               }						  
+						
+
+                      span.m-toggle-icon:before{top:12px;}                       
+                      span.m-toggle-icon:after {top:-14px;}
+					  
+		.m-right.is-open{
+		          transform:translatex(0);
+		               }	
+		              
+		 	.m-nav-toggle.is-open span.m-toggle-icon{
+		 	           background:transparent;
+		 	         
+		 	          }
+		          
+		             	
+		     	.m-nav-toggle.is-open span.m-toggle-icon:before, .m-nav-toggle.is-open span.m-toggle-icon:after{ 
+		     	    transform-origin:center;
+		     	    transform:rotate(45deg);
+		     	    top:0;
+		     	}
+		      .m-nav-toggle.is-open span.m-toggle-icon:after{  
+		          transform:rotate(-45deg);
+		         	}
+					
+		.leftbox p{
+		            border:2px solid black;
+					padding-left:3px;
+					padding-right:3px;
+					text-align:justify;
+					margin:3px;
+					
+		          }			
+
+			   
+
+  	           					
+    	@media only screen and (max-width:1167px){
+            
+	             .m-right		 
+		          {
+				    position:absolute;
+					top:80px; left:0;/*rajouté left 0*/ 
+					right:0px;
+					width:200px;
+					height:100%;
+					background:#11699B;
+					transform:translatex(-100%);
+					transition:all 0.3s ease-in-out;
+			
+		          }	
+				 
+        .m-link
+		        {
+				     
+				       display:block;
+					   text-align:center;
+					   padding:0;
+					   margin:0 30px;
+					   height:55px;
+					   
+                }		
+		   
+					 
+			.m-nav-toggle	  
+		        	 {
+				      
+		            display:flex;
+					
+					/*accelerer le soulignement de l'url */
+					
+				    	 border-bottom:2px solid trasparent; 
+			             padding-bottom:3px;  
+					     transition:all 0.1s case-in-out;
+					     text-align:center;
+						/* padding-left:10px;*/
+				    	/*	padding-right:10px;*/
+       
+                         } 
+					
+					}
+                
+					#foote
+       {
+	 
+        background-color:#11699B;
+	   position:relative;
+	    font-size:12px;
+	    color:#fff;
+	    line-height:70px;
+	    text-transform:uppercase;
+	    height:70px;
+	    text-align:center;
+	     margin-top:100px;
+	   font-weight:bold;
+	
+	 		
+  	}
+
+#asid p{
+        vertical-align:top;
+		border:2px solid black;
+		margin-right:;
+		margin-left:4px;
+		padding-bottom:160px;
+		display:flex;
+     }				
+
+           
+ h1{
+ text-align:center;
+ color:brown;
+   }
+   
+   #article HR{
+                background-color:white;
+              }      
+ 
+
+
+
+
+	.img1{
+      width:20px;
+	  height:20px;
+    }	
+  h4{
+   color:red;
+   font-weight:bold;
+   font-size:12px;
+   text-align:center;
+   
+  }				
+		 		   
+.video{
+        margin-left:0px;
+        background-color:black;
+        width:460px;
+        height:250px;
+      }		     
+
+
+  </style>		 
+  
+				
+
+		
+<header role="header"> 
+    <nav class="menu" role="navigation">
+	 <div class="inner">
+	 
+      <div class="m-left">
+	  <h1 class="logo"> Scores F<i class="far fa-futbol" style="color:black"></i><i class="far fa-futbol" style="color:black"></i>t</h1>
+	  </div>
+	   
+	  <img src="http://www.gifsanimes.com/data/media/165/football-image-animee-0093.gif" width="35px;"  />
+	 
+    
+	  
+	  <div class="m-right">
+	  <a href="index.html" class="m-link"><i class="fas fa-home" style="color:#CD7ECC"></i> Reception</a>
+	  <!--a href="https://www.scores-foot.net/Parler2017/index.php" class="m-link"><i class="fab fa-keycdn" style="color:#CD7ECC"></i> Connexion</a CETTE LIGNE EST CORRECTE!-->
+	  <a href="#" class="m-link"><i class="fab fa-keycdn" style="color:#CD7ECC"></i> Connexion</a>
+	  <a href="#" class="m-link"><i class="fas fa-pen-alt" style="color:#CD7ECC"></i> Inscription</a>
+	  <a href="#" class="m-link"><i class="fas fa-book-open" style="color:#CD7ECC"></i> Portfolio</a>
+	  <a href="#" class="m-link"><i class="fas fa-mobile-alt" style="color:#CD7ECC"></i> Contact</a>
+	  </div>
+	  <div class="m-nav-toggle">
+	  <span class="m-toggle-icon"></span>
+	</div>
+	</div>
+	</nav>
+	
+</header>	
+     <!--script src="\public_html\js\anime.js"!--><!--/script!-->
+
+<!--img src="/498243626_0f6cf5aacb_b.jpg"!-->
+
+ <!--img src="https://www.scores-foot.net/Parler2017/bootstrap/image/498243626_0f6cf5aacb_b.jpg"!-->
+
+<!--section!-->
+<h4>Ce site est en phase de test et d'ammelioration et de mise a jour,
+   je vous remercie pour votre patience.le 28/04/2019 </h4>
+
+<!--img src="http://www.scores-foot.net/boostrap/image/Licorne_champtop.jpg"!-->
+
+<div id="contenu">
+<aside id="asid">
+<div class="img1">
+
+<h4>Christiano Ronaldo</h4>
+
+<!--img src="https://www.scores-foot.net/Parler2017/bootstrap/image/Licorne_champtop.jpg"!-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_-5VndGX-JBhwXzbwFPrhEkN9H_fRmM-fPpsJOyE3pyjDrPC">
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+<article>
+<h4>Ronaldo dans ses oeuvres</h4>
+
+<p>C'etait un match tres dur, l'arbitre central jouait la carte d'un match nul, a une heure du jeu, les stars des deux côtés nous animaient un beau spectacle, mais a la 71'
+l'arbitre revenait à la faute sur ronaldo fauché à 25m des bois, suite a sa douleur au tibia il a cédé ce coup-franc à son coéquipier, mais le gardien était sur la trajectoire du ballon.
+A la 83 eme minute, ronaldo a été entouré de quatre joueurs adverse mais aucun des milliers de spectateurs et même son entraineur n'a pas cru au miracle de Ronaldo
+c'est avec le premier espacement de jambe qu'il a semé le doute aux defenseurs, le deuxieme espacement les defenseurs n'ont rien vu que du vent, mais au finish il rate son
+premier face à face devant le gardien.
+Le match est trés serré de part et d'autre le score etait de zero à zéro et s'approche de la fin, le terrain devenait tres lourd et la nervosité, le jeu dur commence a prendre de l'ampleur,
+l'arbitre etait hors sujet car il ne donne pas l'avantage aux attaquant ce qui a énérvé les supporteurs des deux camps, à la dérnière minute du temps additionel un deffenseur adverse a mal 
+renvoyé le ballon, mais Ronaldo etait là pour surgir de nul part pour inscrire l'unique But de la partie.
+<br><br>(récit d'un match vrais)</p >
+
+</article>
+
+
+
+
+
+<HR align="center;" size="10;"  width="100%;"  color="white;">
+
+<form>
+
+	
+	<h3>videos de votre choix</h3>
+
+</form>	
+
+
+
+<div class="video">
+
+<video width="420" height="250" controls="controls">
+<!--source src ="C:/Users/AH532/Downloads/"!-->
+<source src ="video.mp4">
+<source src ="video.ogg">
+
+<!--source src="https:\\www.scores-foot.net\Parler2017\bootstrap\image\baston-divrogne-trop-drole.mp4"!-->
+<source src="https:\\www.scores-foot.net\Parler2017\bootstrap\image\Top 10 des buts ratés les plus GRAVES !!.mp4">
+
+</video>
+</div>	
+
+<HR align="center;" size="10"  width="100%" ; color="white">
+	
+		
+
+<article>
+
+
+<HR align="center;" size="10;"  width="100%;" color="white;">
+
+<div class="leftbox">
+    
+<h1> Football des Années 60</h1>
+
+<p>Un article vous sera édité sur l'histoire de football, des années 60.
+</p>
+</div>
+
+</article>
+
+
+
+
+  <!-- Optional JavaScript -->
+  
+  
+  
+		<footer>
+   
+               <div id="foote">Copyright &#169; Annee 2017   All rights reserved.
+               <div id="foot"></div>
+               </div>
+   
+        </footer>
+	 
+  
+  
+  
+ 
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	
+	<script langage=javascript>
+	        {
+		      $('.m-nav-toggle').click(function(e){
+                e.preventDefault();
+   $('.m-right').toggleClass('is-open');
+   $('.m-nav-toggle').toggleClass('is-open');
+})
+	    	}
+			  	
+	</script>
+	
+    
+ 
+		
+		
+		
+		
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+		
+		
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	
+
+  
+    
+ </body>
+
+
+
+ </html>
